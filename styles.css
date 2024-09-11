@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+header {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #1DA1F2; /* Blue border for the profile image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+h1 {
+  margin: 20px 0 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.verified {
+  color: #1DA1F2; /* Blue for verification checkmark */
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.about {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  animation: slideIn 1s ease-out;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 40px;
+  transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2) rotate(15deg); /* Slightly larger and rotated on hover */
+}
+
+.social-icons .youtube {
+  color: #FF0000;
+}
+
+.social-icons .telegram {
+  color: #0088cc;
+}
+
+.social-icons .github {
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
